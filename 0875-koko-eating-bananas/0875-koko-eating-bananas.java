@@ -3,7 +3,7 @@ class Solution {
 public static int  hours(int k,int arr[]){
     int count=0;
     int c=0;
-    int hh=0;
+    int hh=0;//store total sum
     for(int i=0;i<arr.length;i++){
         
     //    c=arr[i]%k;
