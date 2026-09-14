@@ -4,7 +4,6 @@ class Solution {
         String ans = "";
 
         for(int i = 0; i < chars.length; i++){
-
             int count = 1;
 
             while(i + 1 < chars.length && chars[i] == chars[i + 1]){
@@ -19,11 +18,13 @@ class Solution {
             }
         }
 
-       
+        int k = 0;
+
         for(int i = 0; i < ans.length(); i++){
-            chars[i] = ans.charAt(i);
+            chars[k] = ans.charAt(i);
+            k++;
         }
 
-        return ans.length();
+        return k;
     }
 }
