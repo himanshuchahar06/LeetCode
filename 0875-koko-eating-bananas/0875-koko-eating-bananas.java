@@ -1,28 +1,40 @@
 class Solution {
 
 public static int  hours(int k,int arr[]){
-    int count=0;
-    int c=0;
-    int hh=0;//store total sum
-    for(int i=0;i<arr.length;i++){
-        
-    //    c=arr[i]%k;
-       c=arr[i]/k;//3/5=0
-     count=arr[i]%k;//3%5=3
 
-    if(count!=0){
-     c=c+1;
-    } 
-       hh=hh+c;
+    int hrs=0;
+    int rem=0;
+    int rem1=0;
+
+    int count =0;
+
+
+        for(int i=0;i<arr.length;i++){
+            rem1=arr[i]%k;
+            rem=arr[i]/k;
+
+            if(rem1!=0){
+                rem++;
+
+            }
+
+            hrs=hrs+rem;
+
+        }
+
+
+       
+    
+  
             
-    }
+    
          
 
     
   
 
 
- return hh;
+ return hrs;
 
 
 
