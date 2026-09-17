@@ -1,25 +1,22 @@
 class Solution {
 
         public  static int days(int capacity,int[] arr){
-            int c=capacity;
-            int day=1;
+         
+         int day=1;
+         int sum=0;
 
+         for(int i=0;i<arr.length;i++){
+            sum=sum+arr[i];
 
-
-            for(int ele:arr){
-              if(c>=ele){
-                c=c-ele;
-
-              }else{
+            if(sum>capacity){
+                
                 day++;
-                c=capacity-ele;
-              }
-
-               
+                sum=arr[i];
 
             }
-            // day++;
-                return day;
+         }
+
+         return day;
         }
 
     public int shipWithinDays(int[] weights, int days) {
