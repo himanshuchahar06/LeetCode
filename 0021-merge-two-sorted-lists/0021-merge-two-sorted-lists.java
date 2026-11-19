@@ -12,14 +12,16 @@ class Solution {
 
                 anstail.next = list1;
                 list1 = list1.next;
+                 anstail = anstail.next;
 
             } else {
 
                 anstail.next = list2;
                 list2 = list2.next;
+                 anstail = anstail.next;
             }
 
-            anstail = anstail.next;
+           
         }
 
         if (list1 != null) {
